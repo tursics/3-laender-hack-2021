@@ -15,7 +15,7 @@ import authService from '../src/auth/authService';
 
 // Export Config-Object
 export default {
-  title: 'Piveau',
+  title: '3 Länder Hack Portal',
   api: {
     baseUrl: 'http://localhost:8081/',
     gazetteerBaseUrl: 'http://localhost:8081/gazetteer/',
