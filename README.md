@@ -1,28 +1,10 @@
-# Peacock User UI
+# 3 Länder Hack, 2021
 
-This project provide a HTML user portal for view open data datasets.
-## Project Setup
+Todo: write a better description
+## Build project for development
 
-Install [Node.js v10.15.0+ and NPM 6.7.0+](https://nodejs.org/en/) on your system
-
-Clone or download the code:
-
-    $ git clone git@github.com:opendata-guru/peacock-user-ui.git
-
-In the config folder copy user-config.sample.js and paste it as user-config.js in the same directory.
-
-Install NPM packages:
-
-    $ cd peacock-user-ui
     $ npm install
-
-## Build for Development
-
-Open a terminal in the `peacock-user-ui` directory and run:
-
     $ npm run dev
-
-This will start a local webserver on Port `8084`.
 
 Open a web browser and visit `http://localhost:8084` to see the app.
 
