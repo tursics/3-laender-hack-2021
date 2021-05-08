@@ -11,12 +11,9 @@
       <div class="content-wrapper navbar navbar-expand-sm">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <app-link class="footer-link" to="https://www.piveau.de/">
-              <img src="@/assets/img/piveau-logo-black.svg" width="125" alt="Piveau Icon" />
+            <app-link class="footer-link" to="https://portal.opendata.guru/">
+              <img src="@/assets/img/dlh-head.png" height="42" alt="3 Länder Hack Portal" />
             </app-link>
-          </li>
-          <li class="nav-item">
-            <app-link class="footer-link" to="https://www.fokus.fraunhofer.de/">Fraunhofer FOKUS</app-link>
           </li>
           <li class="nav-item">
             <app-link class="footer-link" :to="{ path: '/imprint'}">Impressum</app-link>

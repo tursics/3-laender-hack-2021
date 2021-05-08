@@ -5264,7 +5264,11 @@
           "formats": "Formate",
           "categories": "Kategorien",
           "licences": "Lizenzen",
+          "licenses": "Lizenzen",
           "countries": "Länder",
+          "keywords": "Stichwörter",
+          "data scope": "Datenbereich",
+          "scoring": "Bewertung",
           "tags": "Tags"
         },
         "title": "Filter",

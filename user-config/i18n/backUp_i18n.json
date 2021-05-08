@@ -60,7 +60,16 @@
         "settings": "Einstellungen",
         "operator": "Operator",
         "and": "UND",
-        "or": "ODER"
+        "or": "ODER",
+        "europeanCatalogues": "Europäische Kataloge",
+        "facets": {
+          "countries": "Länder",
+          "catalogues": "Kataloge",
+          "categories": "Kategorien",
+          "keywords": "Stichwörter",
+          "formats": "Formate",
+          "licences": "Lizenzen"
+        }
       },
       "datasetDetails": {
         "about": "zum",

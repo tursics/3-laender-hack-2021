@@ -8,7 +8,7 @@
       <div class="content-wrapper navbar navbar-expand-sm">
         <app-link class="navbar-brand d-inline-block" :to="{ path: '/'}">
           <div class="project-title-container">                    
-            <img src="@/assets/img/piveau-logo-white.svg" class="piveau-logo">
+            <img src="@/assets/img/dlh-head.png" class="portal-logo">
           </div>
         </app-link>
         <button
@@ -27,12 +27,12 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <app-link class="nav-link" :to="{ path: '/datasets'}">
-                Datasets
+                Datensätze
               </app-link>
             </li>
             <li class="nav-item">
               <app-link class="nav-link" :to="{ path: '/catalogues'}">
-                Catalogues
+                Kataloge
               </app-link>
             </li>
           </ul>
@@ -65,8 +65,8 @@ export default {
         vertical-align: top;
         text-align: right;
 
-        .piveau-logo {
-            width: 120px;
+        .portal-logo {
+            height: 56px;
           }
           .project-name {
           text-transform: uppercase;

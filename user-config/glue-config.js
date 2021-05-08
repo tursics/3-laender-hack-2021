@@ -51,7 +51,7 @@ export default {
     ],
     footerLogos: [],
   },
-  locale: 'en',
+  locale: 'de',
   fallbackLocale: 'en',
   services: {
     catalogueService,

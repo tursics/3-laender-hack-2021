@@ -50,6 +50,14 @@ $green-fraunhofer: #009374 !default;
 $edp-blue:#074A8B !default;
 $edp-orange: #f9a01b !default;
 
+$dlh-dark-red: #891118 !default;
+$dlh-red: #c40d20 !default;
+$dlh-dark-orange: #eb6b4b !default;
+$dlh-orange: #f5aa8e !default;
+$dlh-dark-green: #026230 !default;
+$dlh-green: #52ac43 !default;
+$dlh-gray: #d9dadb !default;
+
 $colors: () !default;
 $colors: map-merge((
   "blue":       $blue,
@@ -68,13 +76,20 @@ $colors: map-merge((
   "green-fraunhofer": $green-fraunhofer,
   "edp-blue":   $edp-blue,
   "edp-orange": $edp-orange,
+  "dlh-dark-red":    $dlh-dark-red,
+  "dlh-red":         $dlh-red,
+  "dlh-dark-orange": $dlh-dark-orange,
+  "dlh-orange":      $dlh-orange,
+  "dlh-dark-green":  $dlh-dark-green,
+  "dlh-green":       $dlh-green,
+  "dlh-gray":        $dlh-gray,
 ), $colors);
 
-$primary:       $indigo!default;
-$primary-light: lighten($indigo, 60%);
-$primary-dark:  darken($indigo, 7.5%);
-$secondary:     $gray-600 !default;
-$highlight:     $edp-orange;
+$primary:       $dlh-red!default;
+$primary-light: $dlh-dark-orange;
+$primary-dark:  $dlh-dark-red;
+$secondary:     $dlh-green !default;
+$highlight:     $dlh-dark-green;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
