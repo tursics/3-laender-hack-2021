@@ -1,6 +1,7 @@
 # 3 Länder Hack, 2021
 
 Todo: write a better description
+
 ## Build project for development
 
     $ npm install
