@@ -11,7 +11,7 @@ import glueConfig from '../user-config/glue-config';
 import i18n from '../user-config/i18n/i18n.json';
 
 //glueConfig.api.baseUrl = 'https://data.europa.eu/api/hub/search/';
-glueConfig.api.baseUrl = 'https://api.opendata.guri/hub/search/';
+glueConfig.api.baseUrl = 'https://api.opendata.guru/hub/search/';
 glueConfig.api.gazetteerBaseUrl = 'https://www.europeandataportal.eu/data/search/gazetteer/';
 glueConfig.api.uploadBaseUrl = 'https://www.europeandataportal.eu/data/api/';
 
