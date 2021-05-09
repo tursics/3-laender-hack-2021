@@ -17,6 +17,8 @@ Hot Module Replacement is supported. The page will update automatically whenever
 
 This will optimize files for production and store the bundle in `/dist` folder. Deploy the contents of `/dist` folder on your webserver.
 
+You use a shared hoster (ionos, strato) with Apache webserver? Please copy `/apache/.htaccess' file to your webservers root.
+
 <br>
 <br>
 <br>
