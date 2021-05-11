@@ -35,6 +35,11 @@
                 Kataloge
               </app-link>
             </li>
+            <li class="nav-item">
+              <app-link class="nav-link" :to="{ path: '/musterdatenkatalog'}">
+                Vergleichen
+              </app-link>
+            </li>
           </ul>
         </div>
       </div>

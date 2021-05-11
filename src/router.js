@@ -28,6 +28,7 @@ import { decode } from './utils/jwt';
 const DatasetDetails = () => import(/* webpackChunkName: "datasetDetails" */'@/components/EDP2-datasetDetails');
 const UploadPage = () => import(/* webpackChunkName: "uploadPage" */'@/components/Upload/EDP2-uploadPage');
 const Catalogues = () => import(/* webpackChunkName: "catalogues" */'@/components/Catalogues');
+const Musterdatenkatalog = () => import(/* webpackChunkName: "musterdatenkatalog" */'@/components/Musterdatenkatalog');
 const NotFound = () => import(/* webpackChunkName: "notFound" */'@/components/NotFound');
 
 Vue.use(Router);
@@ -128,6 +129,15 @@ const router = new Router({
       path: '/catalogues',
       name: 'Catalogues',
       component: Catalogues,
+      meta: {
+        title,
+      },
+      // props: { infiniteScrolling: false, pagination: true },
+    },
+    {
+      path: '/musterdatenkatalog',
+      name: 'Musterdatenkatalog',
+      component: Musterdatenkatalog,
       meta: {
         title,
       },
