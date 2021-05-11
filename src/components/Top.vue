@@ -36,9 +36,9 @@
               </app-link>
             </li>
             <li class="nav-item">
-              <app-link class="nav-link" :to="{ path: '/musterdatenkatalog'}">
+              <a class="nav-link" href="/musterdatenkatalog/">
                 Vergleichen
-              </app-link>
+              </a>
             </li>
           </ul>
         </div>
