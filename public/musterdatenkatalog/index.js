@@ -9,7 +9,7 @@ var city_data = {};
 
 function showMusterdatenkatalog() {
 
-    $.getJSON('musterdatenkatalog.json', function(musterkatalog) { 
+    $.getJSON('http://api.opendata.guru/hub/search/mdk.php', function(musterkatalog) { 
 
         // Aggregate data into a better structure to print the HTML table based on "Thema"
         var table = {};
