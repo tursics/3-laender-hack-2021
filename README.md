@@ -2,6 +2,9 @@
 
 Todo: write a better description
 
+- Link to portal: http://portal.opendata.guru/
+- Link to Metadatenkatalog: http://portal.opendata.guru/musterdatenkatalog/
+
 ## Build project for development
 
     $ npm install
@@ -18,6 +21,19 @@ Hot Module Replacement is supported. The page will update automatically whenever
 This will optimize files for production and store the bundle in `/dist` folder. Deploy the contents of `/dist` folder on your webserver.
 
 You use a shared hoster (ionos, strato) with Apache webserver? An invisible file is located at `/dist/.htaccess'. Please copy it also to your webservers root.
+
+## Update data
+
+The data is (currently) hand made.
+
+1. Open Spreadsheet https://sbb-my.sharepoint.com/:x:/r/personal/kathrin_ernst_sbb_ch/_layouts/15/Doc.aspx?sourcedoc=%7Bfdc4758e-386f-477c-94dd-6a02260f21cd%7D&action=default&cid=500d42a9-dba3-42ff-852d-cace42b5b71c in browser
+2. file -> save a local copy
+3. Open in Excel
+4. remove all tables, expect the 'Open Data' one
+5. save the file as CSV file
+6. upload csv to webserver /api/hub/item/
+7. open http://api.opendata.guru/hub/item/item.php in browser (this will import the data to database)
+8. done
 
 <br>
 <br>
