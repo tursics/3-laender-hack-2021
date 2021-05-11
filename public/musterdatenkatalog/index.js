@@ -33,7 +33,7 @@ function showMusterdatenkatalog() {
          * Print Musterdatenkatalog HTML table - one nasty loop does it all (O_o)
          */
         var $table = $('<table id="m_table" class="prettyTable"/>');
-        $table.append( '<tr class="head"><th>Musterkat.-Thema</th><th>Musterkat.-Bereich</th><th>Städte mit Datensätzen</th><th id="m_filter">Datenquelle(n) in Münster</th></tr>' );
+        $table.append( '<tr class="head"><th>Musterkat.-Thema</th><th>Musterkat.-Bereich</th><th>Bahnen mit Datensätzen</th><th id="m_filter">Datenquelle(n) in Münster</th></tr>' );
         Object.entries(table).forEach(([topic, subtopics]) => {
             const colspan = Object.keys(subtopics).length +1;
             $body = $('<tbody>');

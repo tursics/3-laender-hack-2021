@@ -24,19 +24,24 @@
         padding: 4px 8px;
     }
     .prettyTable tr.theme {
-        background-color: #BEC8BE;
+        background-color: #eb6b4b;
+		color: #fff;
     }
-    .prettyTable tr.gotIt td {
-        background-color:#BDDDBF;
-    }
+    /*.prettyTable tr.gotIt td {
+        background-color:#f5aa8e;
+    }*/
     .prettyTable tr:nth-child(even){background-color: #f2f2f2;}
 
     .prettyTable tr:hover {background-color: #ddd;}
 
-    .prettyTable th {
+	.prettyTable tr th:nth-child(4), .prettyTable tr td:nth-child(3) {
+		display: none;
+	}
+
+	.prettyTable th {
         padding: 8px;
         text-align: left;
-        background-color: #4CAF50;
+        background-color: #c40d20;
         color: white;
     }
 
@@ -52,7 +57,7 @@
     .prettyTable div.toggle i, .prettyTable div.toggle b {
         font-size: 13px;
         font-style: normal;
-        background-color: #36c;
+        background-color: #026230;
         border-radius: 5px;
         color: white;
         padding: 0 3px;
@@ -65,7 +70,7 @@
     }
     .anleitung {
         padding: 5px 10px;
-        background-color: aliceblue;
+        background-color: #d9dadb;
         margin-bottom: 4px;
         border-radius: 10px;
         font-size: 0.9em;
@@ -77,12 +82,10 @@
 </head>
 <body class="dx-viewport">
     <div class="demo-container">
-        <h2>Open-Data-Musterdatenkatalog - Auswertung für Münster</h2>
+        <h2>Open-Data-Musterdatenkatalog - Auswertung für Bahnen</h2>
         <div class="anleitung">
             <b>Anleitung:</b><br />
-            <i>Blaue Sterne</i> = "Wie viele Städte haben diesen Musterdatensatz?" - Sterne anklicken um die Datensätze der Städte anzuzeigen.<br />
-            <i>Grün hinterlegte Zellen</i> = Diese Datensätze sind bei der aktuell betrachteten Stadt (Münster) vorhanden.<br />
-            <i>"Quelle(n)</i> = Die Datenbereitsteller bzw Ämter der Stadt Münster, aus denen den Daten veröffentlicht wurden.<br />        
+            <i>Grüne Sterne</i> = "Wie viele Bahnen haben diesen Musterdatensatz?" - Sterne anklicken um die Datensätze der Städte anzuzeigen.<br />
         </div>
         <div id="musterdatenkatalog"></div>        
     </div>
