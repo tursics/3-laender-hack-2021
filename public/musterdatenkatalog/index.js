@@ -9,10 +9,11 @@ var city_data = {};
 
 function showMusterdatenkatalog() {
 
-    $.getJSON('musterdatenkatalog.json', function(musterkatalog) { 
+    $.getJSON('https://api.opendata.guru/hub/search/mdk.php', function(musterkatalog) { 
 
         // Aggregate data into a better structure to print the HTML table based on "Thema"
         var table = {};
+		var spaces = '';
         Object.entries(musterkatalog).forEach(([key, value]) => {
             const topic = value['top'];
             const subtopic = value['sub'];
@@ -25,7 +26,8 @@ function showMusterdatenkatalog() {
             if (!table[topic][subtopic]) {
                 table[topic][subtopic] = {};
             }
-            table[topic][subtopic][city] = [data_id, dataset];
+            table[topic][subtopic][city + spaces] = [data_id, dataset];
+			spaces += ' ';
         });
         console.log("table", table);
 
@@ -47,7 +49,8 @@ function showMusterdatenkatalog() {
                 var citylist_html = '';
                 Object.entries(cities).forEach(([city, content]) => {
                     citylist_html += '<b>' + city + '</b>: '
-                        + '<a target="_blank" href="' + open_nrw_prefix + content[0]+'">'+content[1]+'</a><br />';
+//                        + '<a target="_blank" href="' + open_nrw_prefix + content[0]+'">'+content[1]+'</a><br />';
+                        + content[1]+'<br />';
                 });
 
                 // Display the departments of Münster (if we have a matching dataset)
